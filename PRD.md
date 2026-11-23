@@ -17,7 +17,7 @@
 
 **Product Vision**
 
-> Reclaim is a centralized, campus-only web platform that connects students who lose valuable items with the finders who recover them. By replacing chaotic, unsearchable departmental and hostel WhatsApp broadcasts with structured item listings, hidden-detail ownership verification, and an optional finder reward system, Reclaim increases item recovery rates while protecting student privacy and safety.
+ Reclaim is a centralized, campus-only web platform that connects students who lose valuable items with the finders who recover them. By replacing chaotic, unsearchable departmental and hostel WhatsApp broadcasts with structured item listings, hidden-detail ownership verification, and an optional finder reward system, Reclaim increases item recovery rates while protecting student privacy and safety.
 
 ## 2. Problem Statement
 
@@ -99,33 +99,9 @@ Requirements are prioritized using the MoSCoW framework: P0 = Must-Have for MVP,
 
 - **[P1] Admin Dashboard:** Allows authorized campus staff to log items dropped off physically at the security/admin desk, moderate flagged listings, ban repeat false claimants, and auto-archive unresolved posts after 30 days.
 
-## 6. Core User Flows
 
-### Flow A: Reporting & Recovering a Lost Item
 
-> **1. Sign In:** Student logs into Reclaim with their verified school email.
->
-> **2. Submit Report:** Selects Report Lost Item, enters category (AirPods), location (Sports Complex), description, and pledges an optional reward.
->
-> **3. Instant Match Check:** System checks existing Found posts and immediately surfaces any matching items in the same category and zone.
->
-> **4. Submit Claim:** Student finds a matching listing, clicks Claim Item, and answers the finder's hidden security question.
->
-> **5. Approval & Meetup:** Finder approves the answer; both agree to meet at the Main Library entrance.
->
-> **6. Verified Handover:** At handover, the owner inspects the item, hands over the reward, and shares their 6-digit PIN. The finder enters the PIN, updating the post status to Returned.
-
-### Flow B: Logging a Found Item
-
-> **1. Item Discovery:** Finder picks up a student ID card in a lecture hall.
->
-> **2. Quick Log:** Opens Reclaim, taps Report Found Item, selects ID Card and Lecture Hall A.
->
-> **3. Set Security Challenge:** Sets a hidden verification question ("What is your matriculation number?") instead of posting a full photo of the card publicly.
->
-> **4. Verify & Return:** Receives a notification when the owner submits the correct answer, approves the claim, and completes handover.
-
-## 7. Non-Functional Requirements
+## 6. Non-Functional Requirements
 
 - **Security & Privacy:** All passwords hashed; HTTPS enforced; personal phone numbers and sensitive ID card details masked from public view. Uploaded photos stripped of EXIF GPS metadata.
 
@@ -135,7 +111,7 @@ Requirements are prioritized using the MoSCoW framework: P0 = Must-Have for MVP,
 
 - **Reliability:** 99% uptime during active academic semesters, with automated daily database backups.
 
-## 8. Out of Scope for Version 1.0 (MVP)
+## 7. Out of Scope for Version 1.0 (MVP)
 
 To ensure timely delivery for the academic project, the following features are deferred to future releases:
 
@@ -147,7 +123,7 @@ To ensure timely delivery for the academic project, the following features are d
 
 - **Hardware Tracking:** Bluetooth/GPS hardware tracker integration.
 
-## 9. Risks & Mitigations
+## 8. Risks & Mitigations
 
 | **Risk**                                                  | **Impact**                                        | **Mitigation Strategy**                                                                                                                       |
 |-----------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +132,7 @@ To ensure timely delivery for the academic project, the following features are d
 | **Low Initial Adoption ("Everyone still uses WhatsApp")** | High — Empty feed leads to abandonment.           | Built-in Share to WhatsApp button that posts a clean link to hostel/departmental chats, turning WhatsApp into a traffic funnel for Reclaim.   |
 | **Exposure of Sensitive Data (ID Cards / Bank Cards)**    | High — Identity theft or privacy breach.          | Warn finders not to upload unblurred photos of ID numbers; default to text-only + hidden verification for ID/card categories.                 |
 
-## 10. Suggested MVP Tech Stack & Rollout Plan
+## 9. Suggested MVP Tech Stack & Rollout Plan
 
 ### Recommended Tech Stack
 
@@ -166,12 +142,3 @@ To ensure timely delivery for the academic project, the following features are d
 
 - **Deployment:** Vercel or Netlify (free tier suitable for campus MVP).
 
-### Phased Rollout Plan
-
-> **1. Phase 1 (Weeks 1–2):** UI wireframes, database schema design, and institutional authentication.
->
-> **2. Phase 2 (Weeks 3–4):** Lost/Found reporting forms, searchable feed, and hidden-question claim flow.
->
-> **3. Phase 3 (Week 5):** Handover PIN confirmation, WhatsApp share cards, and reward badges.
->
-> **4. Phase 4 (Week 6):** Pilot testing in 1–2 faculties/hostels, bug fixes, and final project presentation.
