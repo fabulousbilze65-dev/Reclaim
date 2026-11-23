@@ -268,27 +268,26 @@ Requirements are prioritized using the MoSCoW framework: P0 = Must-Have for MVP,
 
 **Flow A: Reporting & Recovering a Lost Item**
 
-> **1. Sign In:** Student logs into Reclaim with their verified school email.
->
-> **2. Submit Report:** Selects Report Lost Item, enters category (AirPods), location (Sports Complex), description, and pledges an optional reward.
->
-> **3. Instant Match Check:** System checks existing Found posts and immediately surfaces any matching items in the same category and zone.
->
-> **4. Submit Claim:** Student finds a matching listing, clicks Claim Item, and answers the finder's hidden security question.
->
-> **5. Approval & Meetup:** Finder approves the answer; both agree to meet at the Main Library entrance.
->
-> **6. Verified Handover:** At handover, the owner inspects the item, hands over the reward, and shares their 6-digit PIN. The finder enters the PIN, updating the post status to Returned.
+ **1. Sign In:** Student logs into Reclaim with their verified school email.
+ **2. Submit Report:** Selects Report Lost Item, enters category (AirPods), location (Sports Complex), description, and pledges an optional reward.
+
+**3. Instant Match Check:** System checks existing Found posts and immediately surfaces any matching items in the same category and zone.
+
+ **4. Submit Claim:** Student finds a matching listing, clicks Claim Item, and answers the finder's hidden security question.
+
+**5. Approval & Meetup:** Finder approves the answer; both agree to meet at the Main Library entrance.
+
+ **6. Verified Handover:** At handover, the owner inspects the item, hands over the reward, and shares their 6-digit PIN. The finder enters the PIN, updating the post status to Returned.
 
 **Flow B: Logging a Found Item**
 
-> **1. Item Discovery:** Finder picks up a student ID card in a lecture hall.
->
-> **2. Quick Log:** Opens Reclaim, taps Report Found Item, selects ID Card and Lecture Hall A.
->
-> **3. Set Security Challenge:** Sets a hidden verification question ("What is your matriculation number?") instead of posting a full photo of the card publicly.
->
-> **4. Verify & Return:** Receives a notification when the owner submits the correct answer, approves the claim, and completes handover.
+ **1. Item Discovery:** Finder picks up a student ID card in a lecture hall.
+
+ **2. Quick Log:** Opens Reclaim, taps Report Found Item, selects ID Card and Lecture Hall A.
+
+ **3. Set Security Challenge:** Sets a hidden verification question ("What is your matriculation number?") instead of posting a full photo of the card publicly.
+
+**4. Verify & Return:** Receives a notification when the owner submits the correct answer, approves the claim, and completes handover.
 
 ## 7. Non-Functional Requirements
 
@@ -330,13 +329,3 @@ To ensure timely delivery for the academic project, the following features are d
 - **Backend & Database:** Firebase (Firestore + Authentication + Storage) or Supabase (PostgreSQL + Auth + Storage) for rapid development and real-time updates.
 
 - **Deployment:** Vercel or Netlify (free tier suitable for campus MVP).
-
-**Phased Rollout Plan**
-
-> **1. Phase 1 (Weeks 1–2):** UI wireframes, database schema design, and institutional authentication.
->
-> **2. Phase 2 (Weeks 3–4):** Lost/Found reporting forms, searchable feed, and hidden-question claim flow.
->
-> **3. Phase 3 (Week 5):** Handover PIN confirmation, WhatsApp share cards, and reward badges.
->
-> **4. Phase 4 (Week 6):** Pilot testing in 1–2 faculties/hostels, bug fixes, and final project presentation.
